@@ -1,0 +1,36 @@
+{
+  "name": "test",
+  "version": "0.0.1",
+  "author": "Lund",
+  "dependencies": {
+    "hapi": "^17.1.0",
+    "mysql": "^2.15.0",
+    "typeorm": "^0.1.1"
+  },
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "supervisor ./src/index.js",
+    "lint": "eslint --ext .js src --ext .js test/specs",
+    "test": "mocha",
+    "testJunit": "mocha --reporter mocha-junit-reporter --reporter-options mochaFile=test/test-results.xml"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.11.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^4.0.1",
+    "mocha-junit-reporter": "^1.13.0",
+    "babel-core": "^6.25.0",
+    "supervisor": "^0.12.0",
+    "jsdoc": "3.5.5",
+    "tui-jsdoc-template": "1.2.2"
+  },
+  "engines": {
+    "node": ">= 8.5.0",
+    "npm": ">= 5.3.0"
+  }
+}
